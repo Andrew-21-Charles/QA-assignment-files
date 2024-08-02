@@ -1,0 +1,11 @@
+it('Google Search',() => {
+    cy.visit('http://localhost/vs%20code%20Tire/Wheel%20Alignment%20&%20Tire%20Works.html')
+    cy.get('[href="customerDetails.php"]').click()
+    cy.get('#customer_name').type('Andrew Charles')
+    cy.get('#vehicle_no').type('KL-4434')
+    cy.get('#vehicle_type').type('Car')
+    cy.get('#address').type('197/2 Palliyawatta Batakettara Madapatha')
+    cy.get('#contact').type('0764529972')
+    cy.get('#date').type('2024-08-01')
+    cy.get('[type="submit"]').click()
+})
